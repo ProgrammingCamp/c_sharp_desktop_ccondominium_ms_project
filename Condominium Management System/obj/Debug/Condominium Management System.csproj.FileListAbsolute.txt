@@ -1,0 +1,35 @@
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\bin\Debug\Condominium Management System.exe.config
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\bin\Debug\Condominium Management System.exe
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\bin\Debug\Condominium Management System.pdb
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\bin\Debug\EntityFramework.dll
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\bin\Debug\EntityFramework.SqlServer.dll
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\bin\Debug\Microsoft.SqlServer.Types.dll
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\bin\Debug\EntityFramework.xml
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\bin\Debug\EntityFramework.SqlServer.xml
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\obj\Debug\Condominium_Management_System.frmHome.resources
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\obj\Debug\Condominium_Management_System.frmHouse.resources
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\obj\Debug\Condominium_Management_System.frmLogin.resources
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\obj\Debug\Condominium_Management_System.frmRegion.resources
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\obj\Debug\Condominium_Management_System.frmReportViewer.resources
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\obj\Debug\Condominium_Management_System.frmRole.resources
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\obj\Debug\Condominium_Management_System.frmSubCity.resources
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\obj\Debug\Condominium_Management_System.frmUser.resources
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\obj\Debug\Condominium_Management_System.frmUserRole.resources
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\obj\Debug\Condominium_Management_System.frmWoreda.resources
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\obj\Debug\Condominium_Management_System.Properties.Resources.resources
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\obj\Debug\Condominium Management System.csproj.GenerateResource.Cache
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\obj\Debug\RdlCompile.cache
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\obj\Debug\RdlCompile.compiled
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\obj\Debug\Condominium Management System.exe
+E:\Programming Camp\Desktop Application Development Training\Condominium Management System\Condominium Management System\obj\Debug\Condominium Management System.pdb

@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CondominiumManagementSystemDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="CondominiumManagementSystemDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblExpenses" EntityType="CondominiumManagementSystemDBModel.tblExpense" />
+    <EntitySet Name="tblExpenseReasons" EntityType="CondominiumManagementSystemDBModel.tblExpenseReason" />
+    <EntitySet Name="tblGenders" EntityType="CondominiumManagementSystemDBModel.tblGender" />
+    <EntitySet Name="tblHouses" EntityType="CondominiumManagementSystemDBModel.tblHouse" />
+    <EntitySet Name="tblHouseOwners" EntityType="CondominiumManagementSystemDBModel.tblHouseOwner" />
+    <EntitySet Name="tblHousePayments" EntityType="CondominiumManagementSystemDBModel.tblHousePayment" />
+    <EntitySet Name="tblMaritalStatus" EntityType="CondominiumManagementSystemDBModel.tblMaritalStatu" />
+    <EntitySet Name="tblOwners" EntityType="CondominiumManagementSystemDBModel.tblOwner" />
+    <EntitySet Name="tblPaymentReasons" EntityType="CondominiumManagementSystemDBModel.tblPaymentReason" />
+    <EntitySet Name="tblRegions" EntityType="CondominiumManagementSystemDBModel.tblRegion" />
+    <EntitySet Name="tblRoles" EntityType="CondominiumManagementSystemDBModel.tblRole" />
+    <EntitySet Name="tblSubCities" EntityType="CondominiumManagementSystemDBModel.tblSubCity" />
+    <EntitySet Name="tblUsers" EntityType="CondominiumManagementSystemDBModel.tblUser" />
+    <EntitySet Name="tblUserRoles" EntityType="CondominiumManagementSystemDBModel.tblUserRole" />
+    <EntitySet Name="tblWoredas" EntityType="CondominiumManagementSystemDBModel.tblWoreda" />
+    <AssociationSet Name="FK_tblExpense_tblExpenseReason" Association="CondominiumManagementSystemDBModel.FK_tblExpense_tblExpenseReason">
+      <End Role="tblExpenseReason" EntitySet="tblExpenseReasons" />
+      <End Role="tblExpense" EntitySet="tblExpenses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblOwner_tblGender" Association="CondominiumManagementSystemDBModel.FK_tblOwner_tblGender">
+      <End Role="tblGender" EntitySet="tblGenders" />
+      <End Role="tblOwner" EntitySet="tblOwners" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblHouse_tblRegion" Association="CondominiumManagementSystemDBModel.FK_tblHouse_tblRegion">
+      <End Role="tblRegion" EntitySet="tblRegions" />
+      <End Role="tblHouse" EntitySet="tblHouses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblHouse_tblSubCity" Association="CondominiumManagementSystemDBModel.FK_tblHouse_tblSubCity">
+      <End Role="tblSubCity" EntitySet="tblSubCities" />
+      <End Role="tblHouse" EntitySet="tblHouses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblHouse_tblWoreda" Association="CondominiumManagementSystemDBModel.FK_tblHouse_tblWoreda">
+      <End Role="tblWoreda" EntitySet="tblWoredas" />
+      <End Role="tblHouse" EntitySet="tblHouses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblHouseOwner_tblHouse" Association="CondominiumManagementSystemDBModel.FK_tblHouseOwner_tblHouse">
+      <End Role="tblHouse" EntitySet="tblHouses" />
+      <End Role="tblHouseOwner" EntitySet="tblHouseOwners" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblHousePayment_tblHouse" Association="CondominiumManagementSystemDBModel.FK_tblHousePayment_tblHouse">
+      <End Role="tblHouse" EntitySet="tblHouses" />
+      <End Role="tblHousePayment" EntitySet="tblHousePayments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblHouseOwner_tblOwner" Association="CondominiumManagementSystemDBModel.FK_tblHouseOwner_tblOwner">
+      <End Role="tblOwner" EntitySet="tblOwners" />
+      <End Role="tblHouseOwner" EntitySet="tblHouseOwners" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblHousePayment_tblPaymentReason" Association="CondominiumManagementSystemDBModel.FK_tblHousePayment_tblPaymentReason">
+      <End Role="tblPaymentReason" EntitySet="tblPaymentReasons" />
+      <End Role="tblHousePayment" EntitySet="tblHousePayments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblOwner_tblMaritalStatus" Association="CondominiumManagementSystemDBModel.FK_tblOwner_tblMaritalStatus">
+      <End Role="tblMaritalStatu" EntitySet="tblMaritalStatus" />
+      <End Role="tblOwner" EntitySet="tblOwners" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblSubCity_tblRegion" Association="CondominiumManagementSystemDBModel.FK_tblSubCity_tblRegion">
+      <End Role="tblRegion" EntitySet="tblRegions" />
+      <End Role="tblSubCity" EntitySet="tblSubCities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblUserRole_tblRole" Association="CondominiumManagementSystemDBModel.FK_tblUserRole_tblRole">
+      <End Role="tblRole" EntitySet="tblRoles" />
+      <End Role="tblUserRole" EntitySet="tblUserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblWoreda_tblSubCity" Association="CondominiumManagementSystemDBModel.FK_tblWoreda_tblSubCity">
+      <End Role="tblSubCity" EntitySet="tblSubCities" />
+      <End Role="tblWoreda" EntitySet="tblWoredas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblUserRole_tblUser" Association="CondominiumManagementSystemDBModel.FK_tblUserRole_tblUser">
+      <End Role="tblUser" EntitySet="tblUsers" />
+      <End Role="tblUserRole" EntitySet="tblUserRoles" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="tblExpense">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PaidTo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PaidBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PaidAmount" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="ExpenseReasonID" Type="Int32" Nullable="false" />
+    <Property Name="PaidDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="tblExpenseReason" Relationship="CondominiumManagementSystemDBModel.FK_tblExpense_tblExpenseReason" FromRole="tblExpense" ToRole="tblExpenseReason" />
+  </EntityType>
+  <EntityType Name="tblExpenseReason">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblExpenses" Relationship="CondominiumManagementSystemDBModel.FK_tblExpense_tblExpenseReason" FromRole="tblExpenseReason" ToRole="tblExpense" />
+  </EntityType>
+  <EntityType Name="tblGender">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TItle" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblOwners" Relationship="CondominiumManagementSystemDBModel.FK_tblOwner_tblGender" FromRole="tblGender" ToRole="tblOwner" />
+  </EntityType>
+  <EntityType Name="tblHouse">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RegionID" Type="Int32" Nullable="false" />
+    <Property Name="SubCityID" Type="Int32" Nullable="false" />
+    <Property Name="WoredaID" Type="Int32" Nullable="false" />
+    <Property Name="BlockNumber" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FloorNumber" Type="Int32" Nullable="false" />
+    <Property Name="HouseNumber" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GovernmentTransferedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="SiteName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblRegion" Relationship="CondominiumManagementSystemDBModel.FK_tblHouse_tblRegion" FromRole="tblHouse" ToRole="tblRegion" />
+    <NavigationProperty Name="tblSubCity" Relationship="CondominiumManagementSystemDBModel.FK_tblHouse_tblSubCity" FromRole="tblHouse" ToRole="tblSubCity" />
+    <NavigationProperty Name="tblWoreda" Relationship="CondominiumManagementSystemDBModel.FK_tblHouse_tblWoreda" FromRole="tblHouse" ToRole="tblWoreda" />
+    <NavigationProperty Name="tblHouseOwners" Relationship="CondominiumManagementSystemDBModel.FK_tblHouseOwner_tblHouse" FromRole="tblHouse" ToRole="tblHouseOwner" />
+    <NavigationProperty Name="tblHousePayments" Relationship="CondominiumManagementSystemDBModel.FK_tblHousePayment_tblHouse" FromRole="tblHouse" ToRole="tblHousePayment" />
+  </EntityType>
+  <EntityType Name="tblHouseOwner">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HouseID" Type="Int32" Nullable="false" />
+    <Property Name="OwnerID" Type="Int32" Nullable="false" />
+    <Property Name="OwnershipDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="SoldDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Status" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblHouse" Relationship="CondominiumManagementSystemDBModel.FK_tblHouseOwner_tblHouse" FromRole="tblHouseOwner" ToRole="tblHouse" />
+    <NavigationProperty Name="tblOwner" Relationship="CondominiumManagementSystemDBModel.FK_tblHouseOwner_tblOwner" FromRole="tblHouseOwner" ToRole="tblOwner" />
+  </EntityType>
+  <EntityType Name="tblHousePayment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HouseID" Type="Int32" Nullable="false" />
+    <Property Name="PayerFullname" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PaymentReasonID" Type="Int32" Nullable="false" />
+    <Property Name="PaymentDate" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PaymentAmount" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <NavigationProperty Name="tblHouse" Relationship="CondominiumManagementSystemDBModel.FK_tblHousePayment_tblHouse" FromRole="tblHousePayment" ToRole="tblHouse" />
+    <NavigationProperty Name="tblPaymentReason" Relationship="CondominiumManagementSystemDBModel.FK_tblHousePayment_tblPaymentReason" FromRole="tblHousePayment" ToRole="tblPaymentReason" />
+  </EntityType>
+  <EntityType Name="tblMaritalStatu">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TItle" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblOwners" Relationship="CondominiumManagementSystemDBModel.FK_tblOwner_tblMaritalStatus" FromRole="tblMaritalStatu" ToRole="tblOwner" />
+  </EntityType>
+  <EntityType Name="tblOwner">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fullname" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GenderID" Type="Int32" Nullable="false" />
+    <Property Name="CompleteAddress" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MobileNumber" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MaritalStatusID" Type="Int32" Nullable="false" />
+    <Property Name="BirthDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="tblGender" Relationship="CondominiumManagementSystemDBModel.FK_tblOwner_tblGender" FromRole="tblOwner" ToRole="tblGender" />
+    <NavigationProperty Name="tblHouseOwners" Relationship="CondominiumManagementSystemDBModel.FK_tblHouseOwner_tblOwner" FromRole="tblOwner" ToRole="tblHouseOwner" />
+    <NavigationProperty Name="tblMaritalStatu" Relationship="CondominiumManagementSystemDBModel.FK_tblOwner_tblMaritalStatus" FromRole="tblOwner" ToRole="tblMaritalStatu" />
+  </EntityType>
+  <EntityType Name="tblPaymentReason">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblHousePayments" Relationship="CondominiumManagementSystemDBModel.FK_tblHousePayment_tblPaymentReason" FromRole="tblPaymentReason" ToRole="tblHousePayment" />
+  </EntityType>
+  <EntityType Name="tblRegion">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TItle" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblHouses" Relationship="CondominiumManagementSystemDBModel.FK_tblHouse_tblRegion" FromRole="tblRegion" ToRole="tblHouse" />
+    <NavigationProperty Name="tblSubCities" Relationship="CondominiumManagementSystemDBModel.FK_tblSubCity_tblRegion" FromRole="tblRegion" ToRole="tblSubCity" />
+  </EntityType>
+  <EntityType Name="tblRole">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblUserRoles" Relationship="CondominiumManagementSystemDBModel.FK_tblUserRole_tblRole" FromRole="tblRole" ToRole="tblUserRole" />
+  </EntityType>
+  <EntityType Name="tblSubCity">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RegionID" Type="Int32" Nullable="false" />
+    <Property Name="TItle" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblHouses" Relationship="CondominiumManagementSystemDBModel.FK_tblHouse_tblSubCity" FromRole="tblSubCity" ToRole="tblHouse" />
+    <NavigationProperty Name="tblRegion" Relationship="CondominiumManagementSystemDBModel.FK_tblSubCity_tblRegion" FromRole="tblSubCity" ToRole="tblRegion" />
+    <NavigationProperty Name="tblWoredas" Relationship="CondominiumManagementSystemDBModel.FK_tblWoreda_tblSubCity" FromRole="tblSubCity" ToRole="tblWoreda" />
+  </EntityType>
+  <EntityType Name="tblUser">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fullname" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Username" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblUserRoles" Relationship="CondominiumManagementSystemDBModel.FK_tblUserRole_tblUser" FromRole="tblUser" ToRole="tblUserRole" />
+  </EntityType>
+  <EntityType Name="tblUserRole">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="RoleID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tblRole" Relationship="CondominiumManagementSystemDBModel.FK_tblUserRole_tblRole" FromRole="tblUserRole" ToRole="tblRole" />
+    <NavigationProperty Name="tblUser" Relationship="CondominiumManagementSystemDBModel.FK_tblUserRole_tblUser" FromRole="tblUserRole" ToRole="tblUser" />
+  </EntityType>
+  <EntityType Name="tblWoreda">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SubCityID" Type="Int32" Nullable="false" />
+    <Property Name="TItle" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblHouses" Relationship="CondominiumManagementSystemDBModel.FK_tblHouse_tblWoreda" FromRole="tblWoreda" ToRole="tblHouse" />
+    <NavigationProperty Name="tblSubCity" Relationship="CondominiumManagementSystemDBModel.FK_tblWoreda_tblSubCity" FromRole="tblWoreda" ToRole="tblSubCity" />
+  </EntityType>
+  <Association Name="FK_tblExpense_tblExpenseReason">
+    <End Type="CondominiumManagementSystemDBModel.tblExpenseReason" Role="tblExpenseReason" Multiplicity="1" />
+    <End Type="CondominiumManagementSystemDBModel.tblExpense" Role="tblExpense" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblExpenseReason">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblExpense">
+        <PropertyRef Name="ExpenseReasonID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblOwner_tblGender">
+    <End Type="CondominiumManagementSystemDBModel.tblGender" Role="tblGender" Multiplicity="1" />
+    <End Type="CondominiumManagementSystemDBModel.tblOwner" Role="tblOwner" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblGender">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblOwner">
+        <PropertyRef Name="GenderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblHouse_tblRegion">
+    <End Type="CondominiumManagementSystemDBModel.tblRegion" Role="tblRegion" Multiplicity="1" />
+    <End Type="CondominiumManagementSystemDBModel.tblHouse" Role="tblHouse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblRegion">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblHouse">
+        <PropertyRef Name="RegionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblHouse_tblSubCity">
+    <End Type="CondominiumManagementSystemDBModel.tblSubCity" Role="tblSubCity" Multiplicity="1" />
+    <End Type="CondominiumManagementSystemDBModel.tblHouse" Role="tblHouse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSubCity">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblHouse">
+        <PropertyRef Name="SubCityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblHouse_tblWoreda">
+    <End Type="CondominiumManagementSystemDBModel.tblWoreda" Role="tblWoreda" Multiplicity="1" />
+    <End Type="CondominiumManagementSystemDBModel.tblHouse" Role="tblHouse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblWoreda">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblHouse">
+        <PropertyRef Name="WoredaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblHouseOwner_tblHouse">
+    <End Type="CondominiumManagementSystemDBModel.tblHouse" Role="tblHouse" Multiplicity="1" />
+    <End Type="CondominiumManagementSystemDBModel.tblHouseOwner" Role="tblHouseOwner" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblHouse">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblHouseOwner">
+        <PropertyRef Name="HouseID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblHousePayment_tblHouse">
+    <End Type="CondominiumManagementSystemDBModel.tblHouse" Role="tblHouse" Multiplicity="1" />
+    <End Type="CondominiumManagementSystemDBModel.tblHousePayment" Role="tblHousePayment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblHouse">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblHousePayment">
+        <PropertyRef Name="HouseID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblHouseOwner_tblOwner">
+    <End Type="CondominiumManagementSystemDBModel.tblOwner" Role="tblOwner" Multiplicity="1" />
+    <End Type="CondominiumManagementSystemDBModel.tblHouseOwner" Role="tblHouseOwner" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblOwner">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblHouseOwner">
+        <PropertyRef Name="OwnerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblHousePayment_tblPaymentReason">
+    <End Type="CondominiumManagementSystemDBModel.tblPaymentReason" Role="tblPaymentReason" Multiplicity="1" />
+    <End Type="CondominiumManagementSystemDBModel.tblHousePayment" Role="tblHousePayment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblPaymentReason">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblHousePayment">
+        <PropertyRef Name="PaymentReasonID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblOwner_tblMaritalStatus">
+    <End Type="CondominiumManagementSystemDBModel.tblMaritalStatu" Role="tblMaritalStatu" Multiplicity="1" />
+    <End Type="CondominiumManagementSystemDBModel.tblOwner" Role="tblOwner" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblMaritalStatu">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblOwner">
+        <PropertyRef Name="MaritalStatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblSubCity_tblRegion">
+    <End Type="CondominiumManagementSystemDBModel.tblRegion" Role="tblRegion" Multiplicity="1" />
+    <End Type="CondominiumManagementSystemDBModel.tblSubCity" Role="tblSubCity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblRegion">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblSubCity">
+        <PropertyRef Name="RegionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblUserRole_tblRole">
+    <End Type="CondominiumManagementSystemDBModel.tblRole" Role="tblRole" Multiplicity="1" />
+    <End Type="CondominiumManagementSystemDBModel.tblUserRole" Role="tblUserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblRole">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblUserRole">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblWoreda_tblSubCity">
+    <End Type="CondominiumManagementSystemDBModel.tblSubCity" Role="tblSubCity" Multiplicity="1" />
+    <End Type="CondominiumManagementSystemDBModel.tblWoreda" Role="tblWoreda" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSubCity">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblWoreda">
+        <PropertyRef Name="SubCityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblUserRole_tblUser">
+    <End Type="CondominiumManagementSystemDBModel.tblUser" Role="tblUser" Multiplicity="1" />
+    <End Type="CondominiumManagementSystemDBModel.tblUserRole" Role="tblUserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblUser">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblUserRole">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

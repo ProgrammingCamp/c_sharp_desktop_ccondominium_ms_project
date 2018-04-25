@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0ff4b3c139f54d55831d564e772b2467" Name="Diagram1">
+        <EntityTypeShape EntityType="CondominiumManagementSystemDBModel.tblExpense" Width="1.5" PointX="14" PointY="11" />
+        <EntityTypeShape EntityType="CondominiumManagementSystemDBModel.tblExpenseReason" Width="1.5" PointX="11.75" PointY="11.375" />
+        <EntityTypeShape EntityType="CondominiumManagementSystemDBModel.tblGender" Width="1.5" PointX="5.25" PointY="3.375" />
+        <EntityTypeShape EntityType="CondominiumManagementSystemDBModel.tblHouse" Width="1.5" PointX="7.5" PointY="6.125" />
+        <EntityTypeShape EntityType="CondominiumManagementSystemDBModel.tblHouseOwner" Width="1.5" PointX="9.75" PointY="6.75" />
+        <EntityTypeShape EntityType="CondominiumManagementSystemDBModel.tblHousePayment" Width="1.5" PointX="12.75" PointY="6.75" />
+        <EntityTypeShape EntityType="CondominiumManagementSystemDBModel.tblMaritalStatu" Width="1.5" PointX="5.25" PointY="1" />
+        <EntityTypeShape EntityType="CondominiumManagementSystemDBModel.tblOwner" Width="1.5" PointX="7.5" PointY="1.375" />
+        <EntityTypeShape EntityType="CondominiumManagementSystemDBModel.tblPaymentReason" Width="1.5" PointX="10.5" PointY="4.125" />
+        <EntityTypeShape EntityType="CondominiumManagementSystemDBModel.tblRegion" Width="1.5" PointX="0.75" PointY="4.75" />
+        <EntityTypeShape EntityType="CondominiumManagementSystemDBModel.tblRole" Width="1.5" PointX="9.75" PointY="10.125" />
+        <EntityTypeShape EntityType="CondominiumManagementSystemDBModel.tblSubCity" Width="1.5" PointX="3" PointY="9" />
+        <EntityTypeShape EntityType="CondominiumManagementSystemDBModel.tblUser" Width="1.5" PointX="9.75" PointY="0.875" />
+        <EntityTypeShape EntityType="CondominiumManagementSystemDBModel.tblUserRole" Width="1.5" PointX="12" PointY="0.875" />
+        <EntityTypeShape EntityType="CondominiumManagementSystemDBModel.tblWoreda" Width="1.5" PointX="5.25" PointY="9.125" />
+        <AssociationConnector Association="CondominiumManagementSystemDBModel.FK_tblExpense_tblExpenseReason" />
+        <AssociationConnector Association="CondominiumManagementSystemDBModel.FK_tblOwner_tblGender" />
+        <AssociationConnector Association="CondominiumManagementSystemDBModel.FK_tblHouse_tblRegion" />
+        <AssociationConnector Association="CondominiumManagementSystemDBModel.FK_tblHouse_tblSubCity" />
+        <AssociationConnector Association="CondominiumManagementSystemDBModel.FK_tblHouse_tblWoreda" />
+        <AssociationConnector Association="CondominiumManagementSystemDBModel.FK_tblHouseOwner_tblHouse" />
+        <AssociationConnector Association="CondominiumManagementSystemDBModel.FK_tblHousePayment_tblHouse" />
+        <AssociationConnector Association="CondominiumManagementSystemDBModel.FK_tblHouseOwner_tblOwner" />
+        <AssociationConnector Association="CondominiumManagementSystemDBModel.FK_tblHousePayment_tblPaymentReason" />
+        <AssociationConnector Association="CondominiumManagementSystemDBModel.FK_tblOwner_tblMaritalStatus" />
+        <AssociationConnector Association="CondominiumManagementSystemDBModel.FK_tblSubCity_tblRegion" />
+        <AssociationConnector Association="CondominiumManagementSystemDBModel.FK_tblUserRole_tblRole" />
+        <AssociationConnector Association="CondominiumManagementSystemDBModel.FK_tblWoreda_tblSubCity" />
+        <AssociationConnector Association="CondominiumManagementSystemDBModel.FK_tblUserRole_tblUser" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
